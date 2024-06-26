@@ -57,67 +57,6 @@
       </div>
     </nav>
 
-    <!-- 
-    <div class="container mt-5">
-      <h1 class="mb-4">Mi Cuenta</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <form id="miFormulario" class="needs-validation" novalidate>
-            <div class="form-group">
-              <label for="nombre">Nombre:</label>
-              <h5 id="nombreUsuario"></h5>
-              <input
-                type="text"
-                class="form-control"
-                id="nombre"
-                placeholder="Ingrese su nombre"
-                required
-              />
-              <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
-            </div>
-            <div class="form-group">
-              <label for="email">Correo Electrónico:</label>
-              <h5 id="mailUsuario"></h5>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="Ingrese su correo electrónico"
-                required
-              />
-              <div class="invalid-feedback">
-                Por favor, ingrese un correo electrónico válido.
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary">
-              Guardar Cambios
-            </button>
-          </form>
-        </div>
-
-        <!-- CAMBIO DE CONTRASEÑA -->
-    <!-- <div class="col-md-6">
-                <h2>Cambiar Contraseña</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="contraseñaActual">Contraseña Actual:</label>
-                        <input type="password" class="form-control" id="contraseñaActual" placeholder="Ingrese su contraseña actual">
-                    </div>
-                    <div class="form-group">
-                        <label for="nuevaContraseña">Nueva Contraseña:</label>
-                        <input type="password" class="form-control" id="nuevaContraseña" placeholder="Ingrese su nueva contraseña">
-                    </div>
-                    <div class="form-group">
-                        <label for="confirmarContraseña">Confirmar Nueva Contraseña:</label>
-                        <input type="password" class="form-control" id="confirmarContraseña" placeholder="Confirme su nueva contraseña">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Cambiar Contraseña</button>
-                </form>
-            </div> 
-      </div>
-    </div>
-  -->
-
     <section class="vh-100">
       <div class="container py-5 h-100">
         <div class="row d-flex align-items-center justify-content-center h-500">
@@ -130,11 +69,30 @@
               />
             </div>
             <form>
+              <!-- Nombre input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input
+                  type="text"
+                  id="form-nombre"
+                  class="form-control form-control-lg"
+                />
+                <label class="form-label" for="form1Example13">Nombre</label>
+              </div>
+
+              <!-- Email apellido -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input
+                  type="text"
+                  id="form-apellido"
+                  class="form-control form-control-lg"
+                />
+                <label class="form-label" for="form1Example13">Apellido</label>
+              </div>
               <!-- Email input -->
               <div data-mdb-input-init class="form-outline mb-4">
                 <input
                   type="email"
-                  id="form1Example13"
+                  id="form-email"
                   class="form-control form-control-lg"
                 />
                 <label class="form-label" for="form1Example13">Email</label>
@@ -144,47 +102,37 @@
               <div data-mdb-input-init class="form-outline mb-4">
                 <input
                   type="password"
-                  id="form1Example23"
+                  id="form-password"
                   class="form-control form-control-lg"
                 />
                 <label class="form-label" for="form1Example23">Password</label>
+              </div>
+              <!-- Password input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input
+                  type="password"
+                  id="form-password-repeat"
+                  class="form-control form-control-lg"
+                />
+                <label class="form-label" for="form1Example23"
+                  >Repetir Password</label
+                >
               </div>
 
               <div
                 class="d-flex justify-content-around align-items-center mb-4"
               >
-                <!-- Checkbox -->
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="form1Example3"
-                    checked
-                  />
-                  <label class="form-check-label" for="form1Example3">
-                    Recordarme
-                  </label>
-                </div>
-                <a href="#!">Recuperar contraseña?</a>
-              </div>
-
-              <!-- Submit button -->
+                        <!-- Submit button -->
               <button
                 type="submit"
                 data-mdb-button-init
                 data-mdb-ripple-init
                 class="btn btn-primary btn-lg btn-block"
               >
-                Iniciar sesión
+                Crear Cuenta
               </button>
 
-              <div class="divider d-flex align-items-center my-4">
-                <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
-                <a href="/views/registro.html">Registrarse</a>
-              </div>              
-             
-            </div>
+              
             </form>
           </div>
         </div>
