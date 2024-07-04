@@ -45,6 +45,10 @@ app.get('/cuenta', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'cuenta.html'));
 });
 
+app.get('/video', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'video.html'));
+});
+
 db.sync()
 .then(() => {
   console.log('Base de datos sincronizada');
