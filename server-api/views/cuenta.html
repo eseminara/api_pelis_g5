@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Cuenta</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex">
+      <a class="navbar-brand" href="/">Streaming</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/series">Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/peliculas">Películas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/favoritos">Favoritos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cuenta">Mi Cuenta</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 
+    <div class="container mt-5">
+      <h1 class="mb-4">Mi Cuenta</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="miFormulario" class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <h5 id="nombreUsuario"></h5>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Ingrese su nombre"
+                required
+              />
+              <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo Electrónico:</label>
+              <h5 id="mailUsuario"></h5>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Ingrese su correo electrónico"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor, ingrese un correo electrónico válido.
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Guardar Cambios
+            </button>
+          </form>
+        </div>
+
+        <!-- CAMBIO DE CONTRASEÑA -->
+    <!-- <div class="col-md-6">
+                <h2>Cambiar Contraseña</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="contraseñaActual">Contraseña Actual:</label>
+                        <input type="password" class="form-control" id="contraseñaActual" placeholder="Ingrese su contraseña actual">
+                    </div>
+                    <div class="form-group">
+                        <label for="nuevaContraseña">Nueva Contraseña:</label>
+                        <input type="password" class="form-control" id="nuevaContraseña" placeholder="Ingrese su nueva contraseña">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmarContraseña">Confirmar Nueva Contraseña:</label>
+                        <input type="password" class="form-control" id="confirmarContraseña" placeholder="Confirme su nueva contraseña">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cambiar Contraseña</button>
+                </form>
+            </div> 
+      </div>
+    </div>
+  -->
+
+    <section class="vh-100">
+      <div class="container py-5 h-100">
+        <div class="row d-flex align-items-center justify-content-center h-500">
+          <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+            <div class="col-md-8 col-lg-7 col-xl-6">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+                class="img-fluid"
+                alt="Phone image"
+              />
+            </div>
+            <form>
+              <!-- Email input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input
+                  type="email"
+                  id="form1Example13"
+                  class="form-control form-control-lg"
+                />
+                <label class="form-label" for="form1Example13">Email</label>
+              </div>
+
+              <!-- Password input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input
+                  type="password"
+                  id="form1Example23"
+                  class="form-control form-control-lg"
+                />
+                <label class="form-label" for="form1Example23">Password</label>
+              </div>
+
+              <div
+                class="d-flex justify-content-around align-items-center mb-4"
+              >
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="form1Example3"
+                    checked
+                  />
+                  <label class="form-check-label" for="form1Example3">
+                    Recordarme
+                  </label>
+                </div>
+                <a href="/views/recuperar.html">Recuperar contraseña?</a>
+              </div>
+
+              <!-- Submit button -->
+              <button
+                type="submit"
+                data-mdb-button-init
+                data-mdb-ripple-init
+                class="btn btn-primary btn-lg btn-block"
+              >
+                Iniciar sesión
+              </button>
+
+              <div class="divider d-flex align-items-center my-4">
+                <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+                <a href="/views/registro.html">Registrarse</a>
+              </div>              
+             
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="path/to/validate.js"></script>
+  </body>
+</html>
