@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Cuenta from './pages/Cuenta';
 import Favoritos from './pages/Favoritos';
-import Peliculas from './pages/Peliculas';
+import Movies from './pages/Movies';
 import Recuperar from './pages/Recuperar';
 import Registro from './pages/Registro';
 import SeriesDetails from "./pages/SeriesDetails";
@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/cuenta" element={<Cuenta />} />
           <Route path="/favoritos" element={<Favoritos />} />
-          <Route path="/peliculas" element={<Peliculas />} />
+          <Route path="/movies" element={<Movies />} />
           <Route path="/recuperar" element={<Recuperar />} />
           <Route path="/registro" element={<Registro />} />
           <Route path="/series/:id" element={<SeriesDetails />} />
