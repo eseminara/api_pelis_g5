@@ -2,12 +2,28 @@ const express = require('express');
 const db = require('./data/db')
 const cors = require('cors');
 const path = require('path');
+//Routes
 const userRoutes = require('./routes/userRoutes');
 const movieRoutes = require('./routes/movieRoutes');
 const seriesRoutes = require('./routes/seriesRoutes');
 const commentRoutes = require('./routes/commentRoutes');
+// Models
+const commentModels = require ('./models/Comment.js');
+const movieModels = require ('./models/Movie.js');
+const seriesModels = require ('./models/Series.js');
+const userModels = require ('./models/User.js');
 
 const app = express();
+
+// Sincroniza todos los modelos definidos con la base de datos.
+db.sync({ force: false })  // Cambia a true si quieres que las tablas sean recreadas cada vez que corras la app.
+  .then(() => {
+    console.log("Database & tables created!");
+  })
+  .catch((error) => {
+    console.error("Error creating database & tables: ", error);
+  });
+
 
 app.use(cors());
 app.use(express.json());
