@@ -1,18 +1,14 @@
-import React from 'react';
-import Carousel from '../components/Carousel';
-import MoviesCarousel from '../components/MoviesCarousel';
-import SeriesCarousel from '../components/SeriesCarousel';
+import React from "react";
+import Carousel from "../components/Carousel";
+import SeriesCarousel from "../components/SeriesCarousel";
+import MoviesCarousel from "../components/MoviesCarousel";
 
-const Home = () => {
+function Home() {
   return (
     <div>
       <Carousel />
       <MoviesCarousel />
       <SeriesCarousel />
-
-      <div className="container mx-auto">
-        {/* Aquí va el contenido del home */}
-      </div>
     </div>
   );
 }

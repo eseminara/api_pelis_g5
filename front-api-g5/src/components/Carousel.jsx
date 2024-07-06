@@ -13,30 +13,18 @@ function Carousel() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
   };
+
   return (
     <Slider {...settings}>
       <div>
-        <img
-          src={banner1}
-          alt="Banner 1"
-          className="w-full h-auto object-cover"
-        />
+        <img src={banner1} alt="Banner 1" className="w-full h-auto object-cover" />
       </div>
       <div>
-        <img
-          src={banner2}
-          alt="Banner 2"
-          className="w-full h-auto object-cover"
-        />
+        <img src={banner2} alt="Banner 2" className="w-full h-auto object-cover" />
       </div>
       <div>
-        <img
-          src={banner3}
-          alt="Banner 3"
-          className="w-full h-auto object-cover"
-        />
+        <img src={banner3} alt="Banner 3" className="w-full h-auto object-cover" />
       </div>
     </Slider>
   );

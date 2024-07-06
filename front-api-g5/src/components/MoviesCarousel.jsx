@@ -62,14 +62,33 @@ function MoviesCarousel() {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
-    autoplay: true,
+    slidesToScroll: 3
   };
 
   return (
-    <div className='mt-16 mb-8'>
-      <h4 className='text-center text-gray-50 font-extrabold text-6xl py-8 bg-gray-800'>Películas</h4>
+    <div>
       <div>
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={(event) => setSearchTerm(event.target.value)}
+          placeholder="Filtro por nombre..."
+        />
+      </div>
+      <div>
+        <select
+          value={selectedGenre}
+          onChange={(event) => setSelectedGenre(event.target.value)}
+        >
+          <option value="">Selecciona un género</option>
+          {genres.map((genre) => (
+            <option key={genre.id} value={genre.id}>
+              {genre.name}
+            </option>
+          ))}
+        </select>
+      </div>
+      <div className="slider-container">
         <Slider {...settings}>
           {movies.map((movie) => (
             <div key={movie.id}>

@@ -1,16 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route,  Routes} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import Cuenta from './components/Cuenta';
+import Cuenta from './pages/Cuenta';
 import Favoritos from './pages/Favoritos';
-import Peliculas from './components/Peliculas';
-import Recuperar from './components/Recuperar';
-import Registro from './components/Registro';
+import Movies from './pages/Movies';
+import Recuperar from './pages/Recuperar';
+import Registro from './pages/Registro';
 import SeriesDetails from "./pages/SeriesDetails";
 import Series from './pages/Series';
-import Video from './components/Video';
-import NotFound from './components/NotFound';
+import Video from './pages/Video';
+import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/cuenta" element={<Cuenta />} />
           <Route path="/favoritos" element={<Favoritos />} />
-          <Route path="/peliculas" element={<Peliculas />} />
+          <Route path="/movies" element={<Movies />} />
           <Route path="/recuperar" element={<Recuperar />} />
           <Route path="/registro" element={<Registro />} />
           <Route path="/series/:id" element={<SeriesDetails />} />

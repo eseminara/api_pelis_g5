@@ -15,7 +15,7 @@ const Series = () => {
       )
       .then((response) => {
         setSeries(response.data.tv_shows);
-        setTotalPages(Math.ceil(response.data.total / 9));
+        setTotalPages(Math.ceil(response.data.total / 9)); // Asumiendo 9 series por página
       })
       .catch((error) => {
         console.error("Error fetching series:", error);
@@ -28,7 +28,7 @@ const Series = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Popular Series</h1>
+      <h1 className="text-2xl font-bold mb-4">Series Populares</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {series.map((show) => (
           <SeriesCard key={show.id} show={show} />
